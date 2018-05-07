@@ -3,13 +3,9 @@ package com.example.lg.olympicringsdemo;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PointF;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
-import android.graphics.Xfermode;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -21,21 +17,21 @@ import android.view.View;
 public class OlympicRingsView extends View {
 
     private Context mContext;
-    private float mSpace;
-    private float mStroke;
-    private float mRadius;
     private float viewWidth;
     private float viewHeight;
-    private PointF o1;
-    private PointF o2;
-    private PointF o3;
-    private PointF o4;
-    private PointF o5;
-    private RectF r1;
-    private RectF r2;
-    private RectF r3;
-    private RectF r4;
-    private RectF r5;
+    private float mSpace; //圆环之间的间距
+    private float mStroke; //圆环宽度
+    private float mRadius; //圆环半径
+    private PointF o1; //第一个圆环的圆心坐标
+    private PointF o2; //第二个圆环的圆心坐标
+    private PointF o3; //第三个圆环的圆心坐标
+    private PointF o4; //第四个圆环的圆心坐标
+    private PointF o5; //第五个圆环的圆心坐标
+    private RectF r1;  //第一个圆环的矩形区域
+    private RectF r2;  //第二个圆环的矩形区域
+    private RectF r3;  //第三个圆环的矩形区域
+    private RectF r4;  //第四个圆环的矩形区域
+    private RectF r5;  //第五个圆环的矩形区域
     private Paint p1;
     private Paint p2;
     private Paint p3;
