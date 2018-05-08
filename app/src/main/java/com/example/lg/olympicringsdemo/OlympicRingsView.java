@@ -102,5 +102,4 @@ public class OlympicRingsView extends View {
         paint.setColor(color);
         return paint;
     }
-
 }
